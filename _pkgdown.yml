@@ -1,0 +1,128 @@
+url: https://x-biosignal.github.io/PhysioAnalysis/
+template:
+  bootstrap: 5
+  bslib:
+    primary: "#2c3e50"
+navbar:
+  structure:
+    left: [reference, articles]
+    right: [ecosystem, search, github]
+  components:
+    ecosystem:
+      text: Ecosystem
+      menu:
+        - text: PhysioCore
+          href: https://x-biosignal.github.io/PhysioCore/
+        - text: PhysioIO
+          href: https://x-biosignal.github.io/PhysioIO/
+        - text: PhysioPreprocess
+          href: https://x-biosignal.github.io/PhysioPreprocess/
+        - text: PhysioAnalysis
+          href: https://x-biosignal.github.io/PhysioAnalysis/
+        - text: PhysioEEG
+          href: https://x-biosignal.github.io/PhysioEEG/
+        - text: PhysioECG
+          href: https://x-biosignal.github.io/PhysioECG/
+        - text: PhysioEMG
+          href: https://x-biosignal.github.io/PhysioEMG/
+        - text: PhysioEDA
+          href: https://x-biosignal.github.io/PhysioEDA/
+        - text: PhysioMoCap
+          href: https://x-biosignal.github.io/PhysioMoCap/
+        - text: PhysioCrossModal
+          href: https://x-biosignal.github.io/PhysioCrossModal/
+        - text: PhysioMSKNet
+          href: https://x-biosignal.github.io/PhysioMSKNet/
+        - text: PhysioOpenSim
+          href: https://x-biosignal.github.io/PhysioOpenSim/
+        - text: PhysioAnnotationHub
+          href: https://x-biosignal.github.io/PhysioAnnotationHub/
+        - text: PhysioClinical
+          href: https://x-biosignal.github.io/PhysioClinical/
+        - text: PhysioClinStats
+          href: https://x-biosignal.github.io/PhysioClinStats/
+        - text: PhysioReport
+          href: https://x-biosignal.github.io/PhysioReport/
+    github:
+      icon: fa-github
+      href: https://github.com/x-biosignal/PhysioAnalysis
+reference:
+  - title: Spectral & time-frequency analysis
+    contents:
+      - fftSignals
+      - spectrogram
+      - waveletTransform
+      - bandPower
+      - hilbertTransform
+      - instantaneousAmplitude
+      - instantaneousPhase
+  - title: Epoching
+    contents:
+      - epochData
+      - averageEpochs
+      - grandAverage
+      - epochTimes
+      - epochSliding
+  - title: Connectivity
+    contents:
+      - coherence
+      - crossSpectrum
+      - plv
+      - pli
+      - wPLI
+      - correlationMatrix
+      - connectivityMatrix
+      - slidingWindowConnectivity
+      - temporalStability
+  - title: Network graph metrics
+    contents:
+      - adjacencyMatrix
+      - thresholdNetwork
+      - binarizeNetwork
+      - nodeDegree
+      - clusteringCoefficient
+      - pathLength
+      - betweennessCentrality
+      - eigenvectorCentrality
+      - graphLaplacian
+      - spectralDecomposition
+      - spectralClustering
+      - globalEfficiency
+      - localEfficiency
+      - smallWorldness
+      - modularity
+  - title: Statistical testing
+    contents:
+      - tTestEpochs
+      - anovaEpochs
+      - clusterPermutationTest
+      - effectSize
+      - bootstrapCI
+      - correctPValues
+      - findSignificantWindows
+  - title: Statistical parametric mapping
+    contents:
+      - spmTTest
+      - spmPairedTTest
+      - spmAnova
+  - title: Visualization
+    contents:
+      - plotSignal
+      - plotMultiChannel
+      - plotERP
+      - plotPSD
+      - plotSpectrogram
+      - plotTopomap
+      - plotTopomapSeries
+      - plotSPM
+      - plotNetwork
+      - plotAdjacencyMatrix
+      - plotNetworkMetrics
+      - plotDynamicConnectivity
+      - plotNetworkStability
+articles:
+  - title: Articles
+    navbar: ~
+    contents:
+      - spectral-analysis
+      - statistical-testing

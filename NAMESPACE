@@ -1,0 +1,110 @@
+# Re-export PhysioCore
+import(PhysioCore)
+
+# FFT
+export(fftSignals)
+
+# Time-frequency analysis
+export(spectrogram)
+export(waveletTransform)
+export(bandPower)
+export(hilbertTransform)
+export(instantaneousAmplitude)
+
+# Spectral parameterization (specparam / FOOOF)
+export(specparam)
+export(plotSpecparam)
+export(specparamBiomarker)
+S3method(print, specparam_result)
+
+# Network-Based Statistic (NBS)
+export(networkBasedStatistic)
+export(plotNBSnetwork)
+export(instantaneousPhase)
+export(plotSpectrogram)
+
+# Epoching
+export(epochData)
+export(averageEpochs)
+export(grandAverage)
+export(epochTimes)
+
+# Connectivity
+export(coherence)
+export(crossSpectrum)
+export(plv)
+export(pli)
+export(wPLI)
+export(correlationMatrix)
+export(connectivityMatrix)
+
+# Statistical tests
+export(tTestEpochs)
+export(anovaEpochs)
+export(clusterPermutationTest)
+export(tfce)
+export(effectSize)
+export(rankBiserial)
+export(cliffsDelta)
+export(bootstrapCI)
+export(correctPValues)
+export(findSignificantWindows)
+
+# Visualization - basic plots
+export(plotSignal)
+export(plotMultiChannel)
+export(plotERP)
+export(plotPSD)
+
+# Visualization - topomaps
+export(plotTopomap)
+export(plotTopomapSeries)
+
+# Statistical Parametric Mapping (SPM / random field theory)
+export(spmTTest)
+export(spmPairedTTest)
+export(spmAnova)
+export(spmRegression)
+export(spmMANOVA)
+export(spmSnPM)
+export(plotSPM)
+S3method(print, spm_result)
+
+# Network graph metrics (C++ backend)
+export(adjacencyMatrix)
+export(thresholdNetwork)
+export(binarizeNetwork)
+export(nodeDegree)
+export(clusteringCoefficient)
+export(pathLength)
+export(betweennessCentrality)
+export(eigenvectorCentrality)
+export(graphLaplacian)
+export(spectralDecomposition)
+export(spectralClustering)
+export(globalEfficiency)
+
+# Network + epoch visualization/sliding
+export(plotNetwork)
+export(plotAdjacencyMatrix)
+export(plotNetworkMetrics)
+export(plotDynamicConnectivity)
+export(plotNetworkStability)
+export(epochSliding)
+export(localEfficiency)
+export(smallWorldness)
+export(modularity)
+export(slidingWindowConnectivity)
+export(temporalStability)
+
+# Imports
+import(methods)
+useDynLib(PhysioAnalysis, .registration = TRUE)
+importFrom(Rcpp, sourceCpp)
+importFrom(ggplot2, .data)
+importFrom(S4Vectors, DataFrame, SimpleList, metadata, "metadata<-")
+importFrom(SummarizedExperiment, SummarizedExperiment, assay, "assay<-",
+           assayNames, assays, "assays<-", rowData, "rowData<-", colData)
+importFrom(stats, fft, mvfft, t.test, aov, cor, sd, var, quantile, p.adjust, median, rnorm, runif, pnorm, pt, pf, qt, qf)
+importFrom(graphics, plot, lines, points, par, axis, mtext, legend, image, polygon, abline, rect, title, layout, text)
+importFrom(grDevices, colorRampPalette, col2rgb, rgb, dev.new, gray)

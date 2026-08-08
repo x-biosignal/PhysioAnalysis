@@ -1,0 +1,68 @@
+Package: PhysioAnalysis
+Title: Analysis and Visualization for PhysioExperiment Objects
+Version: 0.3.5
+Authors@R:
+    person(given = "Yusuke",
+           family = "Matsui",
+           role = c("aut", "cre"),
+           email = "mail.to.matsui@gmail.com")
+Description: Provides analysis and visualization functions for physiological
+    signal data stored in 'PhysioExperiment' objects, which extend the
+    Bioconductor 'SummarizedExperiment' container. Methods include the fast
+    Fourier transform ('FFT'), time-frequency decomposition, epoching,
+    functional connectivity (coherence and phase-based measures), graph and
+    network metrics, statistical parametric mapping, and cluster-based
+    permutation testing. Visualization utilities cover scalp topographic maps
+    ('topoplots'), multichannel signal displays, and network graphs. Compiled
+    routines are provided through 'Rcpp' and 'RcppArmadillo'.
+Depends:
+    R (>= 4.2),
+    PhysioCore
+Imports:
+    methods,
+    SummarizedExperiment,
+    S4Vectors,
+    signal,
+    stats,
+    graphics,
+    grDevices,
+    ggplot2,
+    parallel,
+    Rcpp (>= 1.0.0)
+LinkingTo:
+    Rcpp,
+    RcppArmadillo
+Suggests:
+    igraph,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.2.0)
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Collate:
+    'RcppExports.R'
+    'utils-provenance.R'
+    'ops-fft.R'
+    'ops-timefreq.R'
+    'ops-specparam.R'
+    'ops-epoch.R'
+    'ops-epoch-sliding.R'
+    'ops-connectivity.R'
+    'ops-network.R'
+    'stats-spm.R'
+    'stats-spm-regress.R'
+    'stats-spm-manova.R'
+    'stats-spm-nonparam.R'
+    'stats-tests.R'
+    'stats-effectsize-rank.R'
+    'stats-network.R'
+    'vis-plot.R'
+    'vis-multichannel.R'
+    'vis-topomap.R'
+    'vis-network.R'
+    'zzz.R'
+VignetteBuilder: knitr
+RoxygenNote: 7.3.3
+URL: https://github.com/x-biosignal/PhysioAnalysis, https://x-biosignal.r-universe.dev/PhysioAnalysis
+BugReports: https://github.com/x-biosignal/PhysioAnalysis/issues
