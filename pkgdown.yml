@@ -1,0 +1,10 @@
+pandoc: 3.8.3
+pkgdown: 2.2.1
+pkgdown_sha: ~
+articles:
+  spectral-analysis: spectral-analysis.html
+  statistical-testing: statistical-testing.html
+last_built: 2026-08-12T10:18Z
+urls:
+  reference: https://x-biosignal.github.io/PhysioAnalysis/reference
+  article: https://x-biosignal.github.io/PhysioAnalysis/articles
