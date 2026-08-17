@@ -1,0 +1,6 @@
+Key: net_clustering_igraph
+Source: igraph::transitivity(type='local', isolates='zero') on a
+        seed-101 rbinom(0.35) 12-node undirected binary graph
+Tolerance: 1e-08
+Captured: fixed (deterministic generator)
+R: 4.5.2
