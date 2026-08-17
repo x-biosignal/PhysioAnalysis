@@ -33,6 +33,8 @@
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/epochTimes.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/fftSignals.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/findSignificantWindows.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/functionalMixedModel.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/functionalRegression.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/globalEfficiency.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/grandAverage.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/graphLaplacian.html</loc></url>
@@ -64,6 +66,7 @@
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/plv.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/print.spm_result.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/rankBiserial.html</loc></url>
+<url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/scalarOnFunctionRegression.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/slidingWindowConnectivity.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/smallWorldness.html</loc></url>
 <url><loc>https://x-biosignal.github.io/PhysioAnalysis/reference/specparam.html</loc></url>

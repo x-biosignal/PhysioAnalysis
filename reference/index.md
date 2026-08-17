@@ -46,6 +46,10 @@
   : Fast Fourier transform helper
 - [`findSignificantWindows()`](https://x-biosignal.github.io/PhysioAnalysis/reference/findSignificantWindows.md)
   : Find significant time windows
+- [`functionalMixedModel()`](https://x-biosignal.github.io/PhysioAnalysis/reference/functionalMixedModel.md)
+  : Functional random-intercept (multilevel) model for waveforms
+- [`functionalRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/functionalRegression.md)
+  : Function-on-scalar regression (coefficient curves)
 - [`globalEfficiency()`](https://x-biosignal.github.io/PhysioAnalysis/reference/globalEfficiency.md)
   : Compute global efficiency
 - [`grandAverage()`](https://x-biosignal.github.io/PhysioAnalysis/reference/grandAverage.md)
@@ -104,6 +108,8 @@
   : Compute Phase Locking Value (PLV)
 - [`rankBiserial()`](https://x-biosignal.github.io/PhysioAnalysis/reference/rankBiserial.md)
   : Rank-biserial correlation for two independent samples
+- [`scalarOnFunctionRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/scalarOnFunctionRegression.md)
+  : Scalar-on-function regression (functional coefficient)
 - [`slidingWindowConnectivity()`](https://x-biosignal.github.io/PhysioAnalysis/reference/slidingWindowConnectivity.md)
   : Sliding window connectivity
 - [`smallWorldness()`](https://x-biosignal.github.io/PhysioAnalysis/reference/smallWorldness.md)

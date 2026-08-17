@@ -2,7 +2,7 @@
 
 Wraps a specparam aperiodic parameter (by default the exponent) for one
 channel as a reliability-characterised
-[`PhysioBiomarker`](https://x-biosignal.r-universe.dev/PhysioCore/reference/PhysioBiomarker.html).
+[`PhysioBiomarker`](https://x-biosignal.github.io/PhysioCore//reference/PhysioBiomarker.html).
 
 ## Usage
 
@@ -39,12 +39,12 @@ specparamBiomarker(
 ## Value
 
 A
-[`PhysioBiomarker`](https://x-biosignal.r-universe.dev/PhysioCore/reference/PhysioBiomarker.html).
+[`PhysioBiomarker`](https://x-biosignal.github.io/PhysioCore//reference/PhysioBiomarker.html).
 
 ## See also
 
 [`specparam()`](https://x-biosignal.github.io/PhysioAnalysis/reference/specparam.md),
-[`PhysioCore::physioBiomarker()`](https://x-biosignal.r-universe.dev/PhysioCore/reference/physioBiomarker-constructor.html)
+[`PhysioCore::physioBiomarker()`](https://x-biosignal.github.io/PhysioCore//reference/physioBiomarker-constructor.html)
 
 ## Examples
 
