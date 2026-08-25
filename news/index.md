@@ -1,5 +1,40 @@
 # Changelog
 
+## PhysioAnalysis 0.5.0
+
+Surfaced the reliability/agreement, functional-PCA and
+circular-statistics tools into the statistics layer. These validated
+methods live in PhysioCore (their single source of truth) and are now
+re-exported by PhysioAnalysis so they appear in its reference alongside
+the other statistical methods (no new dependency — PhysioAnalysis
+already imports PhysioCore):
+
+- Reliability / agreement:
+  [`icc()`](https://x-biosignal.github.io/PhysioCore//reference/icc.html),
+  [`sem()`](https://x-biosignal.github.io/PhysioCore//reference/sem.html),
+  [`mdc()`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html),
+  [`blandAltman()`](https://x-biosignal.github.io/PhysioCore//reference/blandAltman.html),
+  [`cohensD()`](https://x-biosignal.github.io/PhysioCore//reference/cohensD.html),
+  [`etaSquared()`](https://x-biosignal.github.io/PhysioCore//reference/etaSquared.html)
+  (scalar) and
+  [`waveformCMC()`](https://x-biosignal.github.io/PhysioCore//reference/waveformCMC.html),
+  [`waveformICC()`](https://x-biosignal.github.io/PhysioCore//reference/waveformICC.html),
+  [`waveformReliability()`](https://x-biosignal.github.io/PhysioCore//reference/waveformReliability.html)
+  (pointwise waveform reliability).
+- Functional PCA:
+  [`fPCA()`](https://x-biosignal.github.io/PhysioCore//reference/fPCA.html),
+  [`reconstructFPCA()`](https://x-biosignal.github.io/PhysioCore//reference/reconstructFPCA.html),
+  [`registerCurves()`](https://x-biosignal.github.io/PhysioCore//reference/registerCurves.html).
+- Circular statistics:
+  [`circularSummary()`](https://x-biosignal.github.io/PhysioCore//reference/circularSummary.html),
+  [`rayleighTest()`](https://x-biosignal.github.io/PhysioCore//reference/rayleighTest.html),
+  [`watsonWilliamsTest()`](https://x-biosignal.github.io/PhysioCore//reference/watsonWilliamsTest.html),
+  [`circularLinearCorrelation()`](https://x-biosignal.github.io/PhysioCore//reference/circularLinearCorrelation.html).
+
+(The fPCA/circular/waveform implementations were relocated from
+PhysioMoCap down into PhysioCore, and re-exported back into PhysioMoCap
+for back-compatibility.)
+
 ## PhysioAnalysis 0.3.5
 
 ### Performance
@@ -101,10 +136,10 @@
 
 ## PhysioAnalysis 0.3.0
 
-- Added the offline WS8 inference parity gate for SPM, regression,
-  MANOVA, permutation fields, and parametric and rank-based effect
-  sizes. Committed references are provenance- and SHA-256-checked before
-  public API execution.
+- Added the offline inference parity gate for SPM, regression, MANOVA,
+  permutation fields, and parametric and rank-based effect sizes.
+  Committed references are provenance- and SHA-256-checked before public
+  API execution.
 - Added optional Perrin spherical-spline interpolation to
   [`plotTopomap()`](https://x-biosignal.github.io/PhysioAnalysis/reference/plotTopomap.md)
   and

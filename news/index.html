@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.4.0</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.0" id="physioanalysis-050">PhysioAnalysis 0.5.0<a class="anchor" aria-label="anchor" href="#physioanalysis-050"></a></h2>
+<p>Surfaced the reliability/agreement, functional-PCA and circular-statistics tools into the statistics layer. These validated methods live in PhysioCore (their single source of truth) and are now re-exported by PhysioAnalysis so they appear in its reference alongside the other statistical methods (no new dependency — PhysioAnalysis already imports PhysioCore):</p>
+<ul><li>Reliability / agreement: <code><a href="https://x-biosignal.github.io/PhysioCore//reference/icc.html" class="external-link">icc()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/sem.html" class="external-link">sem()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/mdc.html" class="external-link">mdc()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/blandAltman.html" class="external-link">blandAltman()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/cohensD.html" class="external-link">cohensD()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/etaSquared.html" class="external-link">etaSquared()</a></code> (scalar) and <code><a href="https://x-biosignal.github.io/PhysioCore//reference/waveformCMC.html" class="external-link">waveformCMC()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/waveformICC.html" class="external-link">waveformICC()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/waveformReliability.html" class="external-link">waveformReliability()</a></code> (pointwise waveform reliability).</li>
+<li>Functional PCA: <code><a href="https://x-biosignal.github.io/PhysioCore//reference/fPCA.html" class="external-link">fPCA()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/reconstructFPCA.html" class="external-link">reconstructFPCA()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/registerCurves.html" class="external-link">registerCurves()</a></code>.</li>
+<li>Circular statistics: <code><a href="https://x-biosignal.github.io/PhysioCore//reference/circularSummary.html" class="external-link">circularSummary()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/rayleighTest.html" class="external-link">rayleighTest()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/watsonWilliamsTest.html" class="external-link">watsonWilliamsTest()</a></code>, <code><a href="https://x-biosignal.github.io/PhysioCore//reference/circularLinearCorrelation.html" class="external-link">circularLinearCorrelation()</a></code>.</li>
+</ul><p>(The fPCA/circular/waveform implementations were relocated from PhysioMoCap down into PhysioCore, and re-exported back into PhysioMoCap for back-compatibility.)</p>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.3.5" id="physioanalysis-035">PhysioAnalysis 0.3.5<a class="anchor" aria-label="anchor" href="#physioanalysis-035"></a></h2>
 <div class="section level3">
@@ -104,7 +112,7 @@
 </div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.3.0" id="physioanalysis-030">PhysioAnalysis 0.3.0<a class="anchor" aria-label="anchor" href="#physioanalysis-030"></a></h2>
-<ul><li>Added the offline WS8 inference parity gate for SPM, regression, MANOVA, permutation fields, and parametric and rank-based effect sizes. Committed references are provenance- and SHA-256-checked before public API execution.</li>
+<ul><li>Added the offline inference parity gate for SPM, regression, MANOVA, permutation fields, and parametric and rank-based effect sizes. Committed references are provenance- and SHA-256-checked before public API execution.</li>
 <li>Added optional Perrin spherical-spline interpolation to <code><a href="../reference/plotTopomap.html">plotTopomap()</a></code> and <code><a href="../reference/plotTopomapSeries.html">plotTopomapSeries()</a></code>. The existing Shepard inverse-distance-weighted method remains the default and retains its numerical behavior.</li>
 <li>Added explicit spline stiffness, Legendre term-count, and diagonal regularization controls. Spherical splines are documented as spatial interpolation, not as a surface-Laplacian or source-localization method.</li>
 </ul></div>
