@@ -1,5 +1,19 @@
 # Changelog
 
+## PhysioAnalysis 0.5.1
+
+### New features
+
+- [`autocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/autocorrelation.md)
+  — the single-series sample autocorrelation function (ACF) at lags
+  0..`lag_max`, using the biased, demeaned estimator (the same
+  definition as [`stats::acf`](https://rdrr.io/r/stats/acf.html) and
+  `statsmodels.tsa.acf(adjusted = FALSE)`). The fundamental tool for
+  periodicity, rhythmicity and the decorrelation time of a signal;
+  complements the between-two-series `crossCorrelation()`. Validated
+  against `statsmodels.tsa.acf` bit-for-bit (max \|diff\| ~2e-16) on
+  real eegmmidb POz EEG.
+
 ## PhysioAnalysis 0.5.0
 
 Surfaced the reliability/agreement, functional-PCA and

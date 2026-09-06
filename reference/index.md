@@ -6,6 +6,8 @@
   : Create adjacency matrix from connectivity
 - [`anovaEpochs()`](https://x-biosignal.github.io/PhysioAnalysis/reference/anovaEpochs.md)
   : ANOVA across conditions
+- [`autocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/autocorrelation.md)
+  : Autocorrelation function (ACF)
 - [`averageEpochs()`](https://x-biosignal.github.io/PhysioAnalysis/reference/averageEpochs.md)
   : Average epochs
 - [`bandPower()`](https://x-biosignal.github.io/PhysioAnalysis/reference/bandPower.md)
