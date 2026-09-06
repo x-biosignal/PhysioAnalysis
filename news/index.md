@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioAnalysis 0.5.2
+
+### New features
+
+- [`partialAutocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/partialAutocorrelation.md)
+  — the single-series partial autocorrelation function (PACF) at lags
+  0..`lag_max`, via the Durbin-Levinson recursion on the biased demeaned
+  ACF (building on
+  [`autocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/autocorrelation.md));
+  the same definition as
+  [`stats::pacf`](https://rdrr.io/r/stats/acf.html) and
+  `statsmodels.tsa.pacf(method = "ldb")`. Where the ACF decays, the PACF
+  cuts off after the AR order — the standard AR model-order tool.
+  Validated against `statsmodels.tsa.pacf(method = "ldb")` bit-for-bit
+  (max \|diff\| ~6e-15) on real eegmmidb POz EEG.
+
 ## PhysioAnalysis 0.5.1
 
 ### New features

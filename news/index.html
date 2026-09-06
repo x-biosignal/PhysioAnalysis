@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.2</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.2" id="physioanalysis-052">PhysioAnalysis 0.5.2<a class="anchor" aria-label="anchor" href="#physioanalysis-052"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-2">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-2"></a></h3>
+<ul><li>
+<code><a href="../reference/partialAutocorrelation.html">partialAutocorrelation()</a></code> — the single-series partial autocorrelation function (PACF) at lags 0..<code>lag_max</code>, via the Durbin-Levinson recursion on the biased demeaned ACF (building on <code><a href="../reference/autocorrelation.html">autocorrelation()</a></code>); the same definition as <code><a href="https://rdrr.io/r/stats/acf.html" class="external-link">stats::pacf</a></code> and <code>statsmodels.tsa.pacf(method = "ldb")</code>. Where the ACF decays, the PACF cuts off after the AR order — the standard AR model-order tool. Validated against <code>statsmodels.tsa.pacf(method = "ldb")</code> bit-for-bit (max |diff| ~6e-15) on real eegmmidb POz EEG.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.1" id="physioanalysis-051">PhysioAnalysis 0.5.1<a class="anchor" aria-label="anchor" href="#physioanalysis-051"></a></h2>
 <div class="section level3">

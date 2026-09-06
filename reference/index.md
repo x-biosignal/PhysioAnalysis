@@ -72,6 +72,8 @@
   : Network-Based Statistic (NBS)
 - [`nodeDegree()`](https://x-biosignal.github.io/PhysioAnalysis/reference/nodeDegree.md)
   : Compute node degree
+- [`partialAutocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/partialAutocorrelation.md)
+  : Partial autocorrelation function (PACF)
 - [`pathLength()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pathLength.md)
   : Compute shortest path length
 - [`pli()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pli.md)
