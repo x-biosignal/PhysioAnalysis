@@ -1,5 +1,24 @@
 # Changelog
 
+## PhysioAnalysis 0.5.12
+
+### New features
+
+- [`trimmedMean()`](https://x-biosignal.github.io/PhysioAnalysis/reference/trimmedMean.md)
+  — the trimmed mean (arithmetic mean after discarding the
+  `floor(n*trim)` most extreme values from each end), a robust location
+  estimator completing the robust toolkit alongside
+  [`medianAbsDev()`](https://x-biosignal.github.io/PhysioAnalysis/reference/medianAbsDev.md)
+  and
+  [`interquartileRange()`](https://x-biosignal.github.io/PhysioAnalysis/reference/interquartileRange.md)
+  (robust dispersion) and
+  [`signalMoments()`](https://x-biosignal.github.io/PhysioAnalysis/reference/signalMoments.md)
+  (classical mean/SD). Reproduces `scipy.stats.trim_mean` and base R
+  `mean(x, trim)` bit-for-bit. On a skewed distribution it lies between
+  the mean and the median, so reporting the mean, a trimmed mean and the
+  median together shows how much the tail inflates the mean (certified
+  on real Fantasia RR intervals).
+
 ## PhysioAnalysis 0.5.11
 
 ### New features

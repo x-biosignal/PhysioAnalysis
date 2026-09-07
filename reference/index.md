@@ -167,6 +167,8 @@
   : Threshold-Free Cluster Enhancement (TFCE)
 - [`thresholdNetwork()`](https://x-biosignal.github.io/PhysioAnalysis/reference/thresholdNetwork.md)
   : Threshold network by density
+- [`trimmedMean()`](https://x-biosignal.github.io/PhysioAnalysis/reference/trimmedMean.md)
+  : Trimmed Mean (robust location)
 - [`wPLI()`](https://x-biosignal.github.io/PhysioAnalysis/reference/wPLI.md)
   : Compute weighted Phase Lag Index (wPLI)
 - [`waveletTransform()`](https://x-biosignal.github.io/PhysioAnalysis/reference/waveletTransform.md)

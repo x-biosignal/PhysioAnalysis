@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.11</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.12</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.12" id="physioanalysis-0512">PhysioAnalysis 0.5.12<a class="anchor" aria-label="anchor" href="#physioanalysis-0512"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-12">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-12"></a></h3>
+<ul><li>
+<code><a href="../reference/trimmedMean.html">trimmedMean()</a></code> — the trimmed mean (arithmetic mean after discarding the <code>floor(n*trim)</code> most extreme values from each end), a robust location estimator completing the robust toolkit alongside <code><a href="../reference/medianAbsDev.html">medianAbsDev()</a></code> and <code><a href="../reference/interquartileRange.html">interquartileRange()</a></code> (robust dispersion) and <code><a href="../reference/signalMoments.html">signalMoments()</a></code> (classical mean/SD). Reproduces <code>scipy.stats.trim_mean</code> and base R <code>mean(x, trim)</code> bit-for-bit. On a skewed distribution it lies between the mean and the median, so reporting the mean, a trimmed mean and the median together shows how much the tail inflates the mean (certified on real Fantasia RR intervals).</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.11" id="physioanalysis-0511">PhysioAnalysis 0.5.11<a class="anchor" aria-label="anchor" href="#physioanalysis-0511"></a></h2>
 <div class="section level3">
