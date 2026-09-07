@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.6</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.7</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.7" id="physioanalysis-057">PhysioAnalysis 0.5.7<a class="anchor" aria-label="anchor" href="#physioanalysis-057"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-7">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-7"></a></h3>
+<ul><li>
+<code><a href="../reference/arSpectrum.html">arSpectrum()</a></code> — the autoregressive (parametric) spectral density: <code>S(f) = var / |1 - sum phi_k exp(-i 2pi f k)|^2</code> from a Yule-Walker AR(<code>order</code>) fit (<code><a href="../reference/arYuleWalker.html">arYuleWalker()</a></code>), evaluated on <code>n_freq</code> normalized frequencies. A smooth, low-variance, sharp-peaked parametric alternative to the periodogram / Welch PSD. Matches <code><a href="https://rdrr.io/r/stats/spec.ar.html" class="external-link">stats::spec.ar</a></code> (including its N/(N-p-1) small-sample variance convention) bit-for-bit on real eegmmidb POz EEG; its alpha peak agrees with the nonparametric periodogram within ~0.5 Hz.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.6" id="physioanalysis-056">PhysioAnalysis 0.5.6<a class="anchor" aria-label="anchor" href="#physioanalysis-056"></a></h2>
 <div class="section level3">

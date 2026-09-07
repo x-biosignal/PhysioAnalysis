@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioAnalysis 0.5.7
+
+### New features
+
+- [`arSpectrum()`](https://x-biosignal.github.io/PhysioAnalysis/reference/arSpectrum.md)
+  — the autoregressive (parametric) spectral density:
+  `S(f) = var / |1 - sum phi_k exp(-i 2pi f k)|^2` from a Yule-Walker
+  AR(`order`) fit
+  ([`arYuleWalker()`](https://x-biosignal.github.io/PhysioAnalysis/reference/arYuleWalker.md)),
+  evaluated on `n_freq` normalized frequencies. A smooth, low-variance,
+  sharp-peaked parametric alternative to the periodogram / Welch PSD.
+  Matches [`stats::spec.ar`](https://rdrr.io/r/stats/spec.ar.html)
+  (including its N/(N-p-1) small-sample variance convention) bit-for-bit
+  on real eegmmidb POz EEG; its alpha peak agrees with the nonparametric
+  periodogram within ~0.5 Hz.
+
 ## PhysioAnalysis 0.5.6
 
 ### New features

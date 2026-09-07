@@ -10,13 +10,13 @@ Source:
 [`inst/CITATION`](https://github.com/x-biosignal/PhysioAnalysis/blob/main/inst/CITATION)
 
 Matsui Y (2026). *PhysioAnalysis: Analysis and Visualization for
-PhysioExperiment Objects*. R package version 0.5.6,
+PhysioExperiment Objects*. R package version 0.5.7,
 <https://github.com/x-biosignal/PhysioAnalysis>.
 
     @Manual{,
       title = {PhysioAnalysis: Analysis and Visualization for PhysioExperiment Objects},
       author = {Yusuke Matsui},
       year = {2026},
-      note = {R package version 0.5.6},
+      note = {R package version 0.5.7},
       url = {https://github.com/x-biosignal/PhysioAnalysis},
     }
