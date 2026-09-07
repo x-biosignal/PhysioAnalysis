@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.7</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.8</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.8" id="physioanalysis-058">PhysioAnalysis 0.5.8<a class="anchor" aria-label="anchor" href="#physioanalysis-058"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-8">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-8"></a></h3>
+<ul><li>
+<code><a href="../reference/signalMoments.html">signalMoments()</a></code> — the first four moments of a signal’s amplitude distribution: mean, (population) standard deviation, skewness (asymmetry) and excess kurtosis (tailedness vs Gaussian). Standard shape descriptors (e.g. EEG artifact flagging via high kurtosis). Definitions match <code>scipy.stats.skew</code> (biased) and <code>scipy.stats.kurtosis</code> (Fisher / excess, biased) with the population SD (ddof = 0), reproduced bit-for-bit (max |diff| ~4e-16) on real eegmmidb POz EEG.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.7" id="physioanalysis-057">PhysioAnalysis 0.5.7<a class="anchor" aria-label="anchor" href="#physioanalysis-057"></a></h2>
 <div class="section level3">

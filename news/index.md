@@ -1,5 +1,18 @@
 # Changelog
 
+## PhysioAnalysis 0.5.8
+
+### New features
+
+- [`signalMoments()`](https://x-biosignal.github.io/PhysioAnalysis/reference/signalMoments.md)
+  — the first four moments of a signal’s amplitude distribution: mean,
+  (population) standard deviation, skewness (asymmetry) and excess
+  kurtosis (tailedness vs Gaussian). Standard shape descriptors
+  (e.g. EEG artifact flagging via high kurtosis). Definitions match
+  `scipy.stats.skew` (biased) and `scipy.stats.kurtosis` (Fisher /
+  excess, biased) with the population SD (ddof = 0), reproduced
+  bit-for-bit (max \|diff\| ~4e-16) on real eegmmidb POz EEG.
+
 ## PhysioAnalysis 0.5.7
 
 ### New features

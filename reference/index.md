@@ -124,6 +124,8 @@
   : Rank-biserial correlation for two independent samples
 - [`scalarOnFunctionRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/scalarOnFunctionRegression.md)
   : Scalar-on-function regression (functional coefficient)
+- [`signalMoments()`](https://x-biosignal.github.io/PhysioAnalysis/reference/signalMoments.md)
+  : Signal distribution moments (mean, SD, skewness, kurtosis)
 - [`slidingWindowConnectivity()`](https://x-biosignal.github.io/PhysioAnalysis/reference/slidingWindowConnectivity.md)
   : Sliding window connectivity
 - [`smallWorldness()`](https://x-biosignal.github.io/PhysioAnalysis/reference/smallWorldness.md)
