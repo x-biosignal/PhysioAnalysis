@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.4</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.4" id="physioanalysis-054">PhysioAnalysis 0.5.4<a class="anchor" aria-label="anchor" href="#physioanalysis-054"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-4">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-4"></a></h3>
+<ul><li>
+<code><a href="../reference/ljungBoxTest.html">ljungBoxTest()</a></code> — the Ljung-Box portmanteau test for autocorrelation (Ljung &amp; Box 1978): <code>Q = N(N+2) sum_{k=1}^{h} rho_k^2 / (N-k)</code> from the ACF (<code><a href="../reference/autocorrelation.html">autocorrelation()</a></code>), with a chi-squared(<code>lag</code>) reference under the white-noise null; returns the statistic, p-value and df. The standard formal test for autocorrelation (raw signal) and model adequacy (residuals). Same definition as <code>statsmodels.stats.diagnostic.acorr_ljungbox</code> and <code>stats::Box.test(type = "Ljung-Box")</code>, which it reproduces bit-for-bit for both the statistic and the p-value on real eegmmidb POz EEG.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.3" id="physioanalysis-053">PhysioAnalysis 0.5.3<a class="anchor" aria-label="anchor" href="#physioanalysis-053"></a></h2>
 <div class="section level3">

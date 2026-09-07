@@ -1,5 +1,20 @@
 # Changelog
 
+## PhysioAnalysis 0.5.4
+
+### New features
+
+- [`ljungBoxTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ljungBoxTest.md)
+  — the Ljung-Box portmanteau test for autocorrelation (Ljung & Box
+  1978): `Q = N(N+2) sum_{k=1}^{h} rho_k^2 / (N-k)` from the ACF
+  ([`autocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/autocorrelation.md)),
+  with a chi-squared(`lag`) reference under the white-noise null;
+  returns the statistic, p-value and df. The standard formal test for
+  autocorrelation (raw signal) and model adequacy (residuals). Same
+  definition as `statsmodels.stats.diagnostic.acorr_ljungbox` and
+  `stats::Box.test(type = "Ljung-Box")`, which it reproduces bit-for-bit
+  for both the statistic and the p-value on real eegmmidb POz EEG.
+
 ## PhysioAnalysis 0.5.3
 
 ### New features
