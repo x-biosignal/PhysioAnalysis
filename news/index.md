@@ -1,5 +1,23 @@
 # Changelog
 
+## PhysioAnalysis 0.5.13
+
+### New features
+
+- [`ksNormalityTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ksNormalityTest.md)
+  — the Kolmogorov-Smirnov one-sample normality test,
+  `D = sup|ECDF - fitted normal CDF|` with the two-sided asymptotic
+  p-value. The empirical-CDF (distribution-shape) counterpart of the
+  moment-based
+  [`jarqueBeraTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/jarqueBeraTest.md).
+  The `D` statistic reproduces
+  [`stats::ks.test`](https://rdrr.io/r/stats/ks.test.html) and
+  `scipy.stats.kstest` bit-for-bit. On a long, mildly non-Gaussian
+  signal the two tests can disagree (KS reads the overall shape;
+  Jarque-Bera flags the skew/kurtosis with large-N power). Caveat: with
+  parameters estimated from the sample the naive p-value is
+  anti-conservative (Lilliefors); the `D` statistic is exact.
+
 ## PhysioAnalysis 0.5.12
 
 ### New features

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.12</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.13</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.13" id="physioanalysis-0513">PhysioAnalysis 0.5.13<a class="anchor" aria-label="anchor" href="#physioanalysis-0513"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-13">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-13"></a></h3>
+<ul><li>
+<code><a href="../reference/ksNormalityTest.html">ksNormalityTest()</a></code> — the Kolmogorov-Smirnov one-sample normality test, <code>D = sup|ECDF - fitted normal CDF|</code> with the two-sided asymptotic p-value. The empirical-CDF (distribution-shape) counterpart of the moment-based <code><a href="../reference/jarqueBeraTest.html">jarqueBeraTest()</a></code>. The <code>D</code> statistic reproduces <code><a href="https://rdrr.io/r/stats/ks.test.html" class="external-link">stats::ks.test</a></code> and <code>scipy.stats.kstest</code> bit-for-bit. On a long, mildly non-Gaussian signal the two tests can disagree (KS reads the overall shape; Jarque-Bera flags the skew/kurtosis with large-N power). Caveat: with parameters estimated from the sample the naive p-value is anti-conservative (Lilliefors); the <code>D</code> statistic is exact.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.12" id="physioanalysis-0512">PhysioAnalysis 0.5.12<a class="anchor" aria-label="anchor" href="#physioanalysis-0512"></a></h2>
 <div class="section level3">

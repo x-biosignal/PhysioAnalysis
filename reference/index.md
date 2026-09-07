@@ -76,6 +76,8 @@
   : Jarque-Bera test for normality
 - [`kpssTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kpssTest.md)
   : KPSS test for stationarity
+- [`ksNormalityTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ksNormalityTest.md)
+  : Kolmogorov-Smirnov Test for Normality
 - [`ljungBoxTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ljungBoxTest.md)
   : Ljung-Box test for autocorrelation (white-noise / portmanteau test)
 - [`localEfficiency()`](https://x-biosignal.github.io/PhysioAnalysis/reference/localEfficiency.md)
