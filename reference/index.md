@@ -70,6 +70,8 @@
   : Extract instantaneous amplitude (envelope)
 - [`instantaneousPhase()`](https://x-biosignal.github.io/PhysioAnalysis/reference/instantaneousPhase.md)
   : Extract instantaneous phase
+- [`jarqueBeraTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/jarqueBeraTest.md)
+  : Jarque-Bera test for normality
 - [`kpssTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kpssTest.md)
   : KPSS test for stationarity
 - [`ljungBoxTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ljungBoxTest.md)

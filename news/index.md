@@ -1,5 +1,20 @@
 # Changelog
 
+## PhysioAnalysis 0.5.9
+
+### New features
+
+- [`jarqueBeraTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/jarqueBeraTest.md)
+  — the Jarque-Bera goodness-of-fit test for normality (Jarque & Bera
+  1980): `JB = N/6 (S^2 + K^2/4)` from the skewness S and excess
+  kurtosis K (via
+  [`signalMoments()`](https://x-biosignal.github.io/PhysioAnalysis/reference/signalMoments.md)),
+  compared to a chi-squared(2) under the normality null. The formal,
+  moment-based counterpart of the descriptive near-Gaussian check;
+  returns the statistic, p-value and df. Same definition as
+  `scipy.stats.jarque_bera`, reproduced bit-for-bit for both the
+  statistic and the p-value on real eegmmidb POz EEG.
+
 ## PhysioAnalysis 0.5.8
 
 ### New features

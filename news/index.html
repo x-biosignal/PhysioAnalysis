@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.8</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.9</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.9" id="physioanalysis-059">PhysioAnalysis 0.5.9<a class="anchor" aria-label="anchor" href="#physioanalysis-059"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-9">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-9"></a></h3>
+<ul><li>
+<code><a href="../reference/jarqueBeraTest.html">jarqueBeraTest()</a></code> — the Jarque-Bera goodness-of-fit test for normality (Jarque &amp; Bera 1980): <code>JB = N/6 (S^2 + K^2/4)</code> from the skewness S and excess kurtosis K (via <code><a href="../reference/signalMoments.html">signalMoments()</a></code>), compared to a chi-squared(2) under the normality null. The formal, moment-based counterpart of the descriptive near-Gaussian check; returns the statistic, p-value and df. Same definition as <code>scipy.stats.jarque_bera</code>, reproduced bit-for-bit for both the statistic and the p-value on real eegmmidb POz EEG.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.8" id="physioanalysis-058">PhysioAnalysis 0.5.8<a class="anchor" aria-label="anchor" href="#physioanalysis-058"></a></h2>
 <div class="section level3">
