@@ -2,6 +2,8 @@
 
 ## All functions
 
+- [`adfTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/adfTest.md)
+  : Augmented Dickey-Fuller (ADF) unit-root test statistic
 - [`adjacencyMatrix()`](https://x-biosignal.github.io/PhysioAnalysis/reference/adjacencyMatrix.md)
   : Create adjacency matrix from connectivity
 - [`anovaEpochs()`](https://x-biosignal.github.io/PhysioAnalysis/reference/anovaEpochs.md)

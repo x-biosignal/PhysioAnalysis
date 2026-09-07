@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.5" id="physioanalysis-055">PhysioAnalysis 0.5.5<a class="anchor" aria-label="anchor" href="#physioanalysis-055"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-5">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-5"></a></h3>
+<ul><li>
+<code><a href="../reference/adfTest.html">adfTest()</a></code> — the Augmented Dickey-Fuller unit-root test statistic (Dickey &amp; Fuller 1979): the OLS t-statistic on the lagged level in <code>d y_t = a + b y_{t-1} + sum g_i d y_{t-i} + e</code>; a large negative value rejects the unit-root (non-stationarity) null. Adds the stationarity check the time-series methods (ACF/AR/PSD) implicitly assume. The statistic reproduces <code>statsmodels.tsa.stattools.adfuller(autolag = None)</code> bit-for-bit on real eegmmidb POz EEG. Only the statistic is returned (an exact regression quantity); critical values / p-value require the Dickey- Fuller / MacKinnon reference tables and are not computed.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.4" id="physioanalysis-054">PhysioAnalysis 0.5.4<a class="anchor" aria-label="anchor" href="#physioanalysis-054"></a></h2>
 <div class="section level3">

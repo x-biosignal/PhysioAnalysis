@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioAnalysis 0.5.5
+
+### New features
+
+- [`adfTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/adfTest.md)
+  — the Augmented Dickey-Fuller unit-root test statistic (Dickey &
+  Fuller 1979): the OLS t-statistic on the lagged level in
+  `d y_t = a + b y_{t-1} + sum g_i d y_{t-i} + e`; a large negative
+  value rejects the unit-root (non-stationarity) null. Adds the
+  stationarity check the time-series methods (ACF/AR/PSD) implicitly
+  assume. The statistic reproduces
+  `statsmodels.tsa.stattools.adfuller(autolag = None)` bit-for-bit on
+  real eegmmidb POz EEG. Only the statistic is returned (an exact
+  regression quantity); critical values / p-value require the Dickey-
+  Fuller / MacKinnon reference tables and are not computed.
+
 ## PhysioAnalysis 0.5.4
 
 ### New features
