@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.9</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.10</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.10" id="physioanalysis-0510">PhysioAnalysis 0.5.10<a class="anchor" aria-label="anchor" href="#physioanalysis-0510"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-10">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-10"></a></h3>
+<ul><li>
+<code><a href="../reference/medianAbsDev.html">medianAbsDev()</a></code> — the median absolute deviation, a robust dispersion measure and the robust companion of <code><a href="../reference/signalMoments.html">signalMoments()</a></code>’s classical SD. <code>MAD = constant * median(|x - median(x)|)</code>; the default <code>constant = 1</code> returns the raw MAD (reproducing <code>scipy.stats.median_abs_deviation</code> and base R <code>mad(constant = 1)</code> bit-for-bit), and <code>constant = 1 / qnorm(0.75)</code> (~1.4826) gives the normal-consistent robust estimate of the SD. Certified against both scipy and base R on real eegmmidb POz EEG; comparing its normal-consistent scale with the SD is a lightweight artifact check.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.9" id="physioanalysis-059">PhysioAnalysis 0.5.9<a class="anchor" aria-label="anchor" href="#physioanalysis-059"></a></h2>
 <div class="section level3">

@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioAnalysis 0.5.10
+
+### New features
+
+- [`medianAbsDev()`](https://x-biosignal.github.io/PhysioAnalysis/reference/medianAbsDev.md)
+  — the median absolute deviation, a robust dispersion measure and the
+  robust companion of
+  [`signalMoments()`](https://x-biosignal.github.io/PhysioAnalysis/reference/signalMoments.md)’s
+  classical SD. `MAD = constant * median(|x - median(x)|)`; the default
+  `constant = 1` returns the raw MAD (reproducing
+  `scipy.stats.median_abs_deviation` and base R `mad(constant = 1)`
+  bit-for-bit), and `constant = 1 / qnorm(0.75)` (~1.4826) gives the
+  normal-consistent robust estimate of the SD. Certified against both
+  scipy and base R on real eegmmidb POz EEG; comparing its
+  normal-consistent scale with the SD is a lightweight artifact check.
+
 ## PhysioAnalysis 0.5.9
 
 ### New features

@@ -78,6 +78,8 @@
   : Ljung-Box test for autocorrelation (white-noise / portmanteau test)
 - [`localEfficiency()`](https://x-biosignal.github.io/PhysioAnalysis/reference/localEfficiency.md)
   : Compute local efficiency
+- [`medianAbsDev()`](https://x-biosignal.github.io/PhysioAnalysis/reference/medianAbsDev.md)
+  : Median Absolute Deviation (robust dispersion)
 - [`modularity()`](https://x-biosignal.github.io/PhysioAnalysis/reference/modularity.md)
   : Compute network modularity
 - [`networkBasedStatistic()`](https://x-biosignal.github.io/PhysioAnalysis/reference/networkBasedStatistic.md)
