@@ -1,5 +1,22 @@
 # Changelog
 
+## PhysioAnalysis 0.5.3
+
+### New features
+
+- [`arYuleWalker()`](https://x-biosignal.github.io/PhysioAnalysis/reference/arYuleWalker.md)
+  — fits an autoregressive AR(`order`) model by the Yule-Walker method
+  (Durbin-Levinson on the biased demeaned ACF, building on
+  [`autocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/autocorrelation.md));
+  returns the AR coefficients and the innovation (one-step prediction)
+  variance, the same definition as
+  `statsmodels.regression.linear_model.yule_walker(method = "mle")`.
+  Completes the ACF/PACF/AR-fit lane (choose the order from the
+  `partialAutocorrelation` cut-off). Validated against
+  `statsmodels.regression.yule_walker(method = "mle")` bit-for-bit for
+  both the coefficients (max \|diff\| ~5e-15) and the innovation
+  variance (~5e-13) on real eegmmidb POz EEG.
+
 ## PhysioAnalysis 0.5.2
 
 ### New features

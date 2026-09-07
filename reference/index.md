@@ -6,6 +6,8 @@
   : Create adjacency matrix from connectivity
 - [`anovaEpochs()`](https://x-biosignal.github.io/PhysioAnalysis/reference/anovaEpochs.md)
   : ANOVA across conditions
+- [`arYuleWalker()`](https://x-biosignal.github.io/PhysioAnalysis/reference/arYuleWalker.md)
+  : Autoregressive model fit by Yule-Walker (AR(p))
 - [`autocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/autocorrelation.md)
   : Autocorrelation function (ACF)
 - [`averageEpochs()`](https://x-biosignal.github.io/PhysioAnalysis/reference/averageEpochs.md)

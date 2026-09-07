@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.2</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.3</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.3" id="physioanalysis-053">PhysioAnalysis 0.5.3<a class="anchor" aria-label="anchor" href="#physioanalysis-053"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-3">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-3"></a></h3>
+<ul><li>
+<code><a href="../reference/arYuleWalker.html">arYuleWalker()</a></code> — fits an autoregressive AR(<code>order</code>) model by the Yule-Walker method (Durbin-Levinson on the biased demeaned ACF, building on <code><a href="../reference/autocorrelation.html">autocorrelation()</a></code>); returns the AR coefficients and the innovation (one-step prediction) variance, the same definition as <code>statsmodels.regression.linear_model.yule_walker(method = "mle")</code>. Completes the ACF/PACF/AR-fit lane (choose the order from the <code>partialAutocorrelation</code> cut-off). Validated against <code>statsmodels.regression.yule_walker(method = "mle")</code> bit-for-bit for both the coefficients (max |diff| ~5e-15) and the innovation variance (~5e-13) on real eegmmidb POz EEG.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.2" id="physioanalysis-052">PhysioAnalysis 0.5.2<a class="anchor" aria-label="anchor" href="#physioanalysis-052"></a></h2>
 <div class="section level3">
