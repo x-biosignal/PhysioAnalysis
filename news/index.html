@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.10</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.11</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.11" id="physioanalysis-0511">PhysioAnalysis 0.5.11<a class="anchor" aria-label="anchor" href="#physioanalysis-0511"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-11">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-11"></a></h3>
+<ul><li>
+<code><a href="../reference/interquartileRange.html">interquartileRange()</a></code> — the interquartile range (Q3 − Q1, type-7 quantiles), a robust, quantile-based dispersion measure completing the robust-dispersion toolkit alongside <code><a href="../reference/medianAbsDev.html">medianAbsDev()</a></code> (deviation-based scale) and <code><a href="../reference/signalMoments.html">signalMoments()</a></code> (classical SD). Reproduces <code>scipy.stats.iqr</code> and base R <code>IQR</code> bit-for-bit. Its normal-consistent scale <code>IQR/(2*qnorm(0.75))</code> is a robust SD estimate; comparing it with the SD is a distribution-shape / non-normality check (certified on real Fantasia RR intervals, where the skewed RR distribution makes the robust scale fall below SDNN).</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.10" id="physioanalysis-0510">PhysioAnalysis 0.5.10<a class="anchor" aria-label="anchor" href="#physioanalysis-0510"></a></h2>
 <div class="section level3">

@@ -1,5 +1,22 @@
 # Changelog
 
+## PhysioAnalysis 0.5.11
+
+### New features
+
+- [`interquartileRange()`](https://x-biosignal.github.io/PhysioAnalysis/reference/interquartileRange.md)
+  — the interquartile range (Q3 − Q1, type-7 quantiles), a robust,
+  quantile-based dispersion measure completing the robust-dispersion
+  toolkit alongside
+  [`medianAbsDev()`](https://x-biosignal.github.io/PhysioAnalysis/reference/medianAbsDev.md)
+  (deviation-based scale) and
+  [`signalMoments()`](https://x-biosignal.github.io/PhysioAnalysis/reference/signalMoments.md)
+  (classical SD). Reproduces `scipy.stats.iqr` and base R `IQR`
+  bit-for-bit. Its normal-consistent scale `IQR/(2*qnorm(0.75))` is a
+  robust SD estimate; comparing it with the SD is a distribution-shape /
+  non-normality check (certified on real Fantasia RR intervals, where
+  the skewed RR distribution makes the robust scale fall below SDNN).
+
 ## PhysioAnalysis 0.5.10
 
 ### New features
