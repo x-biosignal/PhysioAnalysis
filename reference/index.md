@@ -68,6 +68,8 @@
   : Extract instantaneous amplitude (envelope)
 - [`instantaneousPhase()`](https://x-biosignal.github.io/PhysioAnalysis/reference/instantaneousPhase.md)
   : Extract instantaneous phase
+- [`kpssTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kpssTest.md)
+  : KPSS test for stationarity
 - [`ljungBoxTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ljungBoxTest.md)
   : Ljung-Box test for autocorrelation (white-noise / portmanteau test)
 - [`localEfficiency()`](https://x-biosignal.github.io/PhysioAnalysis/reference/localEfficiency.md)

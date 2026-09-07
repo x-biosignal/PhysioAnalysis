@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioAnalysis 0.5.6
+
+### New features
+
+- [`kpssTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kpssTest.md)
+  — the KPSS test statistic for level stationarity (Kwiatkowski et
+  al. 1992): `eta = N^-2 sum S_t^2 / lrv` from the partial sums of the
+  demeaned signal, with a Bartlett (Newey-West) long-run variance
+  (truncation `lag`). The complement of
+  [`adfTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/adfTest.md)
+  — KPSS’s null is stationarity, so a *small* statistic fails to reject
+  it. The statistic reproduces
+  `statsmodels.tsa.stattools.kpss(regression = "c")` bit-for-bit on real
+  eegmmidb POz EEG. Only the statistic is returned; critical values /
+  p-value come from the reference tables and are not computed.
+
 ## PhysioAnalysis 0.5.5
 
 ### New features

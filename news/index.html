@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.5</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.6</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.6" id="physioanalysis-056">PhysioAnalysis 0.5.6<a class="anchor" aria-label="anchor" href="#physioanalysis-056"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-6">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-6"></a></h3>
+<ul><li>
+<code><a href="../reference/kpssTest.html">kpssTest()</a></code> — the KPSS test statistic for level stationarity (Kwiatkowski et al. 1992): <code>eta = N^-2 sum S_t^2 / lrv</code> from the partial sums of the demeaned signal, with a Bartlett (Newey-West) long-run variance (truncation <code>lag</code>). The complement of <code><a href="../reference/adfTest.html">adfTest()</a></code> — KPSS’s null is stationarity, so a <em>small</em> statistic fails to reject it. The statistic reproduces <code>statsmodels.tsa.stattools.kpss(regression = "c")</code> bit-for-bit on real eegmmidb POz EEG. Only the statistic is returned; critical values / p-value come from the reference tables and are not computed.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.5" id="physioanalysis-055">PhysioAnalysis 0.5.5<a class="anchor" aria-label="anchor" href="#physioanalysis-055"></a></h2>
 <div class="section level3">
