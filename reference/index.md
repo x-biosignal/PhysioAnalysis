@@ -38,6 +38,8 @@
   : Multiple comparison correction
 - [`correlationMatrix()`](https://x-biosignal.github.io/PhysioAnalysis/reference/correlationMatrix.md)
   : Compute correlation matrix between channels
+- [`correlationTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/correlationTest.md)
+  : Correlation Test
 - [`crossSpectrum()`](https://x-biosignal.github.io/PhysioAnalysis/reference/crossSpectrum.md)
   : Compute cross-spectral density
 - [`effectSize()`](https://x-biosignal.github.io/PhysioAnalysis/reference/effectSize.md)

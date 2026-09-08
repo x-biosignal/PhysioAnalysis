@@ -1,5 +1,16 @@
 # Changelog
 
+## PhysioAnalysis 0.5.15
+
+### New features
+
+- [`correlationTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/correlationTest.md)
+  — the correlation test (Pearson, default, or Spearman) with the
+  two-sided t-based p-value and df. Accepts two vectors or a matrix;
+  returns the correlation coefficient, p-value and df. Pearson
+  reproduces [`stats::cor.test`](https://rdrr.io/r/stats/cor.test.html)
+  and `scipy.stats.pearsonr` bit-for-bit.
+
 ## PhysioAnalysis 0.5.14
 
 ### New features
