@@ -1,5 +1,17 @@
 # Changelog
 
+## PhysioAnalysis 0.5.14
+
+### New features
+
+- [`pairedTTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pairedTTest.md)
+  — the paired-samples t-test (one-sample t of the within-pair
+  differences `x - y`), the standard before/after or condition-A/B test
+  on matched subjects. Accepts two vectors or a two-column matrix;
+  returns the statistic, two-sided p-value and df. Reproduces
+  `stats::t.test(x, y, paired = TRUE)` and `scipy.stats.ttest_rel`
+  bit-for-bit.
+
 ## PhysioAnalysis 0.5.13
 
 ### New features

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.13</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.14</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.14" id="physioanalysis-0514">PhysioAnalysis 0.5.14<a class="anchor" aria-label="anchor" href="#physioanalysis-0514"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-14">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-14"></a></h3>
+<ul><li>
+<code><a href="../reference/pairedTTest.html">pairedTTest()</a></code> — the paired-samples t-test (one-sample t of the within-pair differences <code>x - y</code>), the standard before/after or condition-A/B test on matched subjects. Accepts two vectors or a two-column matrix; returns the statistic, two-sided p-value and df. Reproduces <code>stats::t.test(x, y, paired = TRUE)</code> and <code>scipy.stats.ttest_rel</code> bit-for-bit.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.13" id="physioanalysis-0513">PhysioAnalysis 0.5.13<a class="anchor" aria-label="anchor" href="#physioanalysis-0513"></a></h2>
 <div class="section level3">

@@ -90,6 +90,8 @@
   : Network-Based Statistic (NBS)
 - [`nodeDegree()`](https://x-biosignal.github.io/PhysioAnalysis/reference/nodeDegree.md)
   : Compute node degree
+- [`pairedTTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pairedTTest.md)
+  : Paired-Samples t-Test
 - [`partialAutocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/partialAutocorrelation.md)
   : Partial autocorrelation function (PACF)
 - [`pathLength()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pathLength.md)
