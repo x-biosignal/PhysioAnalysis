@@ -56,6 +56,8 @@
   : Fast Fourier transform helper
 - [`findSignificantWindows()`](https://x-biosignal.github.io/PhysioAnalysis/reference/findSignificantWindows.md)
   : Find significant time windows
+- [`friedmanTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/friedmanTest.md)
+  : Friedman rank-sum test (non-parametric repeated-measures omnibus)
 - [`functionalMixedModel()`](https://x-biosignal.github.io/PhysioAnalysis/reference/functionalMixedModel.md)
   : Functional random-intercept (multilevel) model for waveforms
 - [`functionalRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/functionalRegression.md)

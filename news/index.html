@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.17</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.18</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.18" id="physioanalysis-0518">PhysioAnalysis 0.5.18<a class="anchor" aria-label="anchor" href="#physioanalysis-0518"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-18">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-18"></a></h3>
+<ul><li>
+<code><a href="../reference/friedmanTest.html">friedmanTest()</a></code> — the Friedman rank-sum test, the non-parametric repeated-measures omnibus and the within-subject counterpart of <code><a href="../reference/oneWayAnova.html">oneWayAnova()</a></code>. Accepts a blocks-by-treatments matrix (or a list of aligned treatment vectors), drops incomplete blocks, and returns the tie-corrected chi-square statistic, p-value, degrees of freedom (<code>k - 1</code>), the number of treatments (<code>k</code>) and complete blocks (<code>n</code>). Reproduces base R <code><a href="https://rdrr.io/r/stats/friedman.test.html" class="external-link">stats::friedman.test</a></code> bit-for-bit and <code>scipy.stats.friedmanchisquare</code> to machine precision.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.17" id="physioanalysis-0517">PhysioAnalysis 0.5.17<a class="anchor" aria-label="anchor" href="#physioanalysis-0517"></a></h2>
 <div class="section level3">

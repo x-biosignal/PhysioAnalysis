@@ -1,5 +1,20 @@
 # Changelog
 
+## PhysioAnalysis 0.5.18
+
+### New features
+
+- [`friedmanTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/friedmanTest.md)
+  — the Friedman rank-sum test, the non-parametric repeated-measures
+  omnibus and the within-subject counterpart of
+  [`oneWayAnova()`](https://x-biosignal.github.io/PhysioAnalysis/reference/oneWayAnova.md).
+  Accepts a blocks-by-treatments matrix (or a list of aligned treatment
+  vectors), drops incomplete blocks, and returns the tie-corrected
+  chi-square statistic, p-value, degrees of freedom (`k - 1`), the
+  number of treatments (`k`) and complete blocks (`n`). Reproduces base
+  R [`stats::friedman.test`](https://rdrr.io/r/stats/friedman.test.html)
+  bit-for-bit and `scipy.stats.friedmanchisquare` to machine precision.
+
 ## PhysioAnalysis 0.5.17
 
 ### New features
