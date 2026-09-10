@@ -1,5 +1,20 @@
 # Changelog
 
+## PhysioAnalysis 0.5.17
+
+### New features
+
+- [`oneWayAnova()`](https://x-biosignal.github.io/PhysioAnalysis/reference/oneWayAnova.md)
+  — the classic equal-variance one-way ANOVA (omnibus F-test), the
+  many-group generalisation of
+  [`twoSampleTTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/twoSampleTTest.md).
+  Accepts a list of `k >= 2` numeric group vectors (or the groups as
+  separate arguments) and returns the F-statistic, p-value,
+  between/within degrees of freedom (`df1`, `df2`), the number of groups
+  (`k`) and the total sample size (`n`). The omnibus F reproduces base R
+  `stats::oneway.test(var.equal = TRUE)` bit-for-bit and
+  `scipy.stats.f_oneway` to machine precision.
+
 ## PhysioAnalysis 0.5.16
 
 ### New features

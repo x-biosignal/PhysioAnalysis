@@ -92,6 +92,8 @@
   : Network-Based Statistic (NBS)
 - [`nodeDegree()`](https://x-biosignal.github.io/PhysioAnalysis/reference/nodeDegree.md)
   : Compute node degree
+- [`oneWayAnova()`](https://x-biosignal.github.io/PhysioAnalysis/reference/oneWayAnova.md)
+  : One-way ANOVA (omnibus F-test) across groups
 - [`pairedTTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pairedTTest.md)
   : Paired-Samples t-Test
 - [`partialAutocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/partialAutocorrelation.md)

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.16</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.17</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.17" id="physioanalysis-0517">PhysioAnalysis 0.5.17<a class="anchor" aria-label="anchor" href="#physioanalysis-0517"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-17">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-17"></a></h3>
+<ul><li>
+<code><a href="../reference/oneWayAnova.html">oneWayAnova()</a></code> — the classic equal-variance one-way ANOVA (omnibus F-test), the many-group generalisation of <code><a href="../reference/twoSampleTTest.html">twoSampleTTest()</a></code>. Accepts a list of <code>k &gt;= 2</code> numeric group vectors (or the groups as separate arguments) and returns the F-statistic, p-value, between/within degrees of freedom (<code>df1</code>, <code>df2</code>), the number of groups (<code>k</code>) and the total sample size (<code>n</code>). The omnibus F reproduces base R <code>stats::oneway.test(var.equal = TRUE)</code> bit-for-bit and <code>scipy.stats.f_oneway</code> to machine precision.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.16" id="physioanalysis-0516">PhysioAnalysis 0.5.16<a class="anchor" aria-label="anchor" href="#physioanalysis-0516"></a></h2>
 <div class="section level3">
