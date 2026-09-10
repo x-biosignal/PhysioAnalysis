@@ -1,5 +1,17 @@
 # Changelog
 
+## PhysioAnalysis 0.5.16
+
+### New features
+
+- [`twoSampleTTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/twoSampleTTest.md)
+  — the independent two-sample t-test, Welch’s (unequal-variance) by
+  default or Student’s pooled with `var_equal = TRUE`. Accepts two
+  vectors or a two-element list; returns the statistic, two-sided
+  p-value and df. Welch reproduces
+  [`stats::t.test`](https://rdrr.io/r/stats/t.test.html) and
+  `scipy.stats.ttest_ind(equal_var = FALSE)` bit-for-bit.
+
 ## PhysioAnalysis 0.5.15
 
 ### New features

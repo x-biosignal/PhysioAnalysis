@@ -175,6 +175,8 @@
   : Threshold network by density
 - [`trimmedMean()`](https://x-biosignal.github.io/PhysioAnalysis/reference/trimmedMean.md)
   : Trimmed Mean (robust location)
+- [`twoSampleTTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/twoSampleTTest.md)
+  : Two-Sample t-Test
 - [`wPLI()`](https://x-biosignal.github.io/PhysioAnalysis/reference/wPLI.md)
   : Compute weighted Phase Lag Index (wPLI)
 - [`waveletTransform()`](https://x-biosignal.github.io/PhysioAnalysis/reference/waveletTransform.md)
