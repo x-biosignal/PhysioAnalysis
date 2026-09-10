@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioAnalysis 0.5.19
+
+### New features
+
+- [`kruskalTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kruskalTest.md)
+  — the Kruskal-Wallis rank-sum test, the non-parametric between-groups
+  omnibus and the distribution-free counterpart of
+  [`oneWayAnova()`](https://x-biosignal.github.io/PhysioAnalysis/reference/oneWayAnova.md)
+  (no normality/equal-variance assumption). Accepts a list of `k >= 2`
+  group vectors (or the groups as arguments) and returns the
+  tie-corrected H-statistic, p-value, degrees of freedom (`k - 1`), `k`
+  and `n`. The H is accumulated in the same order as base R, so it
+  reproduces
+  [`stats::kruskal.test`](https://rdrr.io/r/stats/kruskal.test.html)
+  bit-for-bit and `scipy.stats.kruskal` to machine precision.
+
 ## PhysioAnalysis 0.5.18
 
 ### New features

@@ -80,6 +80,8 @@
   : Jarque-Bera test for normality
 - [`kpssTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kpssTest.md)
   : KPSS test for stationarity
+- [`kruskalTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kruskalTest.md)
+  : Kruskal-Wallis rank-sum test (non-parametric between-groups omnibus)
 - [`ksNormalityTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ksNormalityTest.md)
   : Kolmogorov-Smirnov Test for Normality
 - [`ljungBoxTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ljungBoxTest.md)

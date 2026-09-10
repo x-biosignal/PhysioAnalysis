@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.18</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.19</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.19" id="physioanalysis-0519">PhysioAnalysis 0.5.19<a class="anchor" aria-label="anchor" href="#physioanalysis-0519"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-19">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-19"></a></h3>
+<ul><li>
+<code><a href="../reference/kruskalTest.html">kruskalTest()</a></code> — the Kruskal-Wallis rank-sum test, the non-parametric between-groups omnibus and the distribution-free counterpart of <code><a href="../reference/oneWayAnova.html">oneWayAnova()</a></code> (no normality/equal-variance assumption). Accepts a list of <code>k &gt;= 2</code> group vectors (or the groups as arguments) and returns the tie-corrected H-statistic, p-value, degrees of freedom (<code>k - 1</code>), <code>k</code> and <code>n</code>. The H is accumulated in the same order as base R, so it reproduces <code><a href="https://rdrr.io/r/stats/kruskal.test.html" class="external-link">stats::kruskal.test</a></code> bit-for-bit and <code>scipy.stats.kruskal</code> to machine precision.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.18" id="physioanalysis-0518">PhysioAnalysis 0.5.18<a class="anchor" aria-label="anchor" href="#physioanalysis-0518"></a></h2>
 <div class="section level3">
