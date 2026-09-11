@@ -1,5 +1,17 @@
 # Changelog
 
+## PhysioAnalysis 0.5.28
+
+### New features
+
+- [`intraclassCorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/intraclassCorrelation.md)
+  — the six McGraw & Wong (1996) intraclass correlation coefficients
+  (ICC1/2/3 single and ICC1k/2k/3k average) from a subjects-by-raters
+  matrix, via a two-way ANOVA. The standard test-retest / inter-rater
+  reliability index. Reproduces `psych::ICC(lmer = FALSE)` and
+  `pingouin.intraclass_corr` to machine precision (note psych’s default
+  `lmer = TRUE` uses REML variance components, which differ slightly).
+
 ## PhysioAnalysis 0.5.27
 
 ### New features

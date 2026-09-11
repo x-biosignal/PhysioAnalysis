@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.27</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.28</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.28" id="physioanalysis-0528">PhysioAnalysis 0.5.28<a class="anchor" aria-label="anchor" href="#physioanalysis-0528"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-28">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-28"></a></h3>
+<ul><li>
+<code><a href="../reference/intraclassCorrelation.html">intraclassCorrelation()</a></code> — the six McGraw &amp; Wong (1996) intraclass correlation coefficients (ICC1/2/3 single and ICC1k/2k/3k average) from a subjects-by-raters matrix, via a two-way ANOVA. The standard test-retest / inter-rater reliability index. Reproduces <code>psych::ICC(lmer = FALSE)</code> and <code>pingouin.intraclass_corr</code> to machine precision (note psych’s default <code>lmer = TRUE</code> uses REML variance components, which differ slightly).</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.27" id="physioanalysis-0527">PhysioAnalysis 0.5.27<a class="anchor" aria-label="anchor" href="#physioanalysis-0527"></a></h2>
 <div class="section level3">

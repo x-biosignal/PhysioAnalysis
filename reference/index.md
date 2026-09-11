@@ -80,6 +80,8 @@
   : Extract instantaneous phase
 - [`interquartileRange()`](https://x-biosignal.github.io/PhysioAnalysis/reference/interquartileRange.md)
   : Interquartile Range (robust spread)
+- [`intraclassCorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/intraclassCorrelation.md)
+  : Intraclass correlation coefficients (ICC)
 - [`jarqueBeraTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/jarqueBeraTest.md)
   : Jarque-Bera test for normality
 - [`kendallTau()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kendallTau.md)
