@@ -106,6 +106,8 @@
   : Paired-Samples t-Test
 - [`partialAutocorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/partialAutocorrelation.md)
   : Partial autocorrelation function (PACF)
+- [`partialCorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/partialCorrelation.md)
+  : Partial correlation controlling for covariates
 - [`pathLength()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pathLength.md)
   : Compute shortest path length
 - [`pli()`](https://x-biosignal.github.io/PhysioAnalysis/reference/pli.md)

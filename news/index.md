@@ -1,5 +1,18 @@
 # Changelog
 
+## PhysioAnalysis 0.5.22
+
+### New features
+
+- [`partialCorrelation()`](https://x-biosignal.github.io/PhysioAnalysis/reference/partialCorrelation.md)
+  — partial correlation of `x` and `y` controlling for one or more
+  covariates `z` (Pearson, or `method = "spearman"` for a rank/robust
+  partial correlation), by residualising both on `[1, z]` via QR and
+  correlating the residuals. The standard test of whether an association
+  survives adjustment for a confound. Returns the partial correlation,
+  its two-sided p-value, `df` (`n - 2 - k`), `n` and `k`. Reproduces
+  base R’s residual method and the `ppcor` package to machine precision.
+
 ## PhysioAnalysis 0.5.21
 
 ### New features
