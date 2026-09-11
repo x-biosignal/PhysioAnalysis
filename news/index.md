@@ -1,5 +1,19 @@
 # Changelog
 
+## PhysioAnalysis 0.5.24
+
+### New features
+
+- [`dunnTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/dunnTest.md)
+  — Dunn’s test, the non-parametric post-hoc for all pairwise
+  comparisons after a Kruskal-Wallis test (the rank-based counterpart of
+  [`tukeyHSD()`](https://x-biosignal.github.io/PhysioAnalysis/reference/tukeyHSD.md)).
+  Uses the shared tie-corrected rank variance and a chosen
+  multiple-comparison adjustment (bonferroni default; also
+  none/holm/BH), and returns a data frame of comparisons (`z`,
+  `p_value`, `p_adj`). Reproduces base R’s Dunn formula, the `PMCMRplus`
+  package and `scikit_posthocs.posthoc_dunn` to machine precision.
+
 ## PhysioAnalysis 0.5.23
 
 ### New features

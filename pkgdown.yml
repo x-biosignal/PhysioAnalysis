@@ -4,7 +4,7 @@ pkgdown_sha: ~
 articles:
   spectral-analysis: spectral-analysis.html
   statistical-testing: statistical-testing.html
-last_built: 2026-09-11T03:54Z
+last_built: 2026-09-11T05:45Z
 urls:
   reference: https://x-biosignal.github.io/PhysioAnalysis/reference
   article: https://x-biosignal.github.io/PhysioAnalysis/articles

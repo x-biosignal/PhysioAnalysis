@@ -42,6 +42,8 @@
   : Correlation Test
 - [`crossSpectrum()`](https://x-biosignal.github.io/PhysioAnalysis/reference/crossSpectrum.md)
   : Compute cross-spectral density
+- [`dunnTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/dunnTest.md)
+  : Dunn's test (post-hoc pairwise comparisons after Kruskal-Wallis)
 - [`effectSize()`](https://x-biosignal.github.io/PhysioAnalysis/reference/effectSize.md)
   : Compute effect size (Cohen's d / Hedges g)
 - [`eigenvectorCentrality()`](https://x-biosignal.github.io/PhysioAnalysis/reference/eigenvectorCentrality.md)
