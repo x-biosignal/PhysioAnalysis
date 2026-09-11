@@ -84,6 +84,8 @@
   : Kruskal-Wallis rank-sum test (non-parametric between-groups omnibus)
 - [`ksNormalityTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ksNormalityTest.md)
   : Kolmogorov-Smirnov Test for Normality
+- [`linearRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/linearRegression.md)
+  : Simple linear regression (ordinary least squares)
 - [`ljungBoxTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ljungBoxTest.md)
   : Ljung-Box test for autocorrelation (white-noise / portmanteau test)
 - [`localEfficiency()`](https://x-biosignal.github.io/PhysioAnalysis/reference/localEfficiency.md)

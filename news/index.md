@@ -1,5 +1,16 @@
 # Changelog
 
+## PhysioAnalysis 0.5.20
+
+### New features
+
+- [`linearRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/linearRegression.md)
+  — simple univariate OLS regression: slope, intercept, R-squared and
+  the two-sided t-test of the slope. Accepts `(x, y)` vectors or a
+  two-column `x`, and drops incomplete pairs. The slope, R-squared and
+  slope p-value reproduce `scipy.stats.linregress` bit-for-bit and base
+  R [`stats::lm`](https://rdrr.io/r/stats/lm.html) to machine precision.
+
 ## PhysioAnalysis 0.5.19
 
 ### New features
