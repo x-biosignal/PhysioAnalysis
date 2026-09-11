@@ -43,11 +43,11 @@ attributes.
 ``` r
 m <- matrix(rnorm(40) + rep(c(0, 0.5, 1, 1.5), each = 10), nrow = 10)
 colnames(m) <- c("a", "b", "c", "d"); nemenyiTest(m)
-#>    comparison statistic      p_adj
-#> b      b vs a 0.1732051 0.99815453
-#> c      c vs a 1.9052559 0.22574088
-#> c1     c vs b 2.0784610 0.16012588
-#> d      d vs a 2.4248711 0.07245072
-#> d1     d vs b 2.5980762 0.04626766
-#> d2     d vs c 0.5196152 0.95441134
+#>    comparison statistic       p_adj
+#> b      b vs a 1.2124356 0.618912324
+#> c      c vs a 3.1176915 0.009856376
+#> c1     c vs b 1.9052559 0.225740880
+#> d      d vs a 2.5980762 0.046267656
+#> d1     d vs b 1.3856406 0.508353152
+#> d2     d vs c 0.5196152 0.954411343
 ```

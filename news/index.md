@@ -1,5 +1,18 @@
 # Changelog
 
+## PhysioAnalysis 0.5.26
+
+### New features
+
+- [`multipleRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/multipleRegression.md)
+  — multivariable OLS regression of a response (first column) on two or
+  more predictors: the coefficient table (estimate, SE, t, p) plus
+  R-squared, adjusted R-squared and the overall F-test, via the same QR
+  decomposition as base R. The many-predictor generalisation of
+  [`linearRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/linearRegression.md).
+  Reproduces [`stats::lm`](https://rdrr.io/r/stats/lm.html) /
+  `summary.lm` bit-for-bit and `statsmodels` OLS to machine precision.
+
 ## PhysioAnalysis 0.5.25
 
 ### New features

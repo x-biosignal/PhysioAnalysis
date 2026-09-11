@@ -40,10 +40,10 @@ degrees of freedom, `k - 1`), `df2` (within-groups, `N - k`), `k`
 ``` r
 oneWayAnova(list(rnorm(20), rnorm(20, 1), rnorm(20, 2)))
 #> $statistic
-#> [1] 20.25613
+#> [1] 20.59068
 #> 
 #> $p_value
-#> [1] 2.260708e-07
+#> [1] 1.8604e-07
 #> 
 #> $df1
 #> [1] 2

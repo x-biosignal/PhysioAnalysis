@@ -98,6 +98,8 @@
   : Median Absolute Deviation (robust dispersion)
 - [`modularity()`](https://x-biosignal.github.io/PhysioAnalysis/reference/modularity.md)
   : Compute network modularity
+- [`multipleRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/multipleRegression.md)
+  : Multiple linear regression (ordinary least squares)
 - [`nemenyiTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/nemenyiTest.md)
   : Nemenyi post-hoc test (all pairwise comparisons after a Friedman
   test)
