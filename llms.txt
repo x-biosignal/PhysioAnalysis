@@ -423,6 +423,9 @@ Community and policy documents live in the umbrella repository:
   : Threshold network by density
 - [`trimmedMean()`](https://x-biosignal.github.io/PhysioAnalysis/reference/trimmedMean.md)
   : Trimmed Mean (robust location)
+- [`tukeyHSD()`](https://x-biosignal.github.io/PhysioAnalysis/reference/tukeyHSD.md)
+  : Tukey HSD post-hoc test (all pairwise comparisons after one-way
+  ANOVA)
 - [`twoSampleTTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/twoSampleTTest.md)
   : Two-Sample t-Test
 - [`wPLI()`](https://x-biosignal.github.io/PhysioAnalysis/reference/wPLI.md)

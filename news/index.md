@@ -1,5 +1,19 @@
 # Changelog
 
+## PhysioAnalysis 0.5.23
+
+### New features
+
+- [`tukeyHSD()`](https://x-biosignal.github.io/PhysioAnalysis/reference/tukeyHSD.md)
+  — Tukey’s Honest Significant Difference post-hoc test: all pairwise
+  mean comparisons after a one-way ANOVA, with studentized-range
+  p-values, confidence intervals and single-step control of the
+  family-wise error rate. Accepts a named list of group vectors and
+  returns a data frame of comparisons (`diff`, `lwr`, `upr`, `p_adj`).
+  Reproduces base R
+  [`stats::TukeyHSD`](https://rdrr.io/r/stats/TukeyHSD.html) and
+  `scipy.stats.tukey_hsd` to machine precision.
+
 ## PhysioAnalysis 0.5.22
 
 ### New features
