@@ -40,6 +40,8 @@
   : Compute correlation matrix between channels
 - [`correlationTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/correlationTest.md)
   : Correlation Test
+- [`cronbachAlpha()`](https://x-biosignal.github.io/PhysioAnalysis/reference/cronbachAlpha.md)
+  : Cronbach's alpha (internal-consistency reliability)
 - [`crossSpectrum()`](https://x-biosignal.github.io/PhysioAnalysis/reference/crossSpectrum.md)
   : Compute cross-spectral density
 - [`dunnTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/dunnTest.md)

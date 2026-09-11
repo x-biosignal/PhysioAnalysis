@@ -1,5 +1,19 @@
 # Changelog
 
+## PhysioAnalysis 0.5.27
+
+### New features
+
+- [`cronbachAlpha()`](https://x-biosignal.github.io/PhysioAnalysis/reference/cronbachAlpha.md)
+  — Cronbach’s alpha, the standard index of a scale’s
+  internal-consistency reliability, computed from the item and
+  total-score variances. Takes a respondents-by-items matrix and returns
+  the raw alpha, the mean inter-item correlation, and the item /
+  respondent counts. Reproduces base R, the `psych` package
+  (`psych::alpha` raw_alpha) bit-for-bit and `pingouin.cronbach_alpha`
+  to machine precision. Adds a psychometrics capability to the analysis
+  toolkit.
+
 ## PhysioAnalysis 0.5.26
 
 ### New features
