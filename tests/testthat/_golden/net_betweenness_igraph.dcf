@@ -1,0 +1,6 @@
+Key: net_betweenness_igraph
+Source: igraph::betweenness(directed=FALSE, normalized=TRUE) on the
+        same seed-101 12-node undirected binary graph
+Tolerance: 1e-08
+Captured: fixed (deterministic generator)
+R: 4.5.2

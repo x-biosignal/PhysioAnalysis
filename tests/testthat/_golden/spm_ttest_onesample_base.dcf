@@ -1,0 +1,6 @@
+Key: spm_ttest_onesample_base
+Source: base stats::t.test() per time point, one-sample vs 0; seed-303
+        group1 n=8, 60 points
+Tolerance: 1e-08
+Captured: fixed (deterministic generator)
+R: 4.5.2
