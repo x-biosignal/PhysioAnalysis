@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.28</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.29</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.29" id="physioanalysis-0529">PhysioAnalysis 0.5.29<a class="anchor" aria-label="anchor" href="#physioanalysis-0529"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-29">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-29"></a></h3>
+<ul><li>
+<code><a href="../reference/leveneTest.html">leveneTest()</a></code> — Levene’s test for homogeneity of variance across <code>k &gt;= 2</code> groups, as a one-way ANOVA on the absolute deviations from each group’s centre; <code>center = "median"</code> (default) is the robust Brown-Forsythe variant. Returns the F-statistic, p-value, degrees of freedom, <code>k</code>, <code>n</code> and <code>center</code>. Reproduces <code>scipy.stats.levene</code> and <code>car::leveneTest</code> to machine precision. (Its name collides with <code>car::leveneTest</code> — call <code><a href="../reference/leveneTest.html">PhysioAnalysis::leveneTest</a></code> when <code>car</code> is attached.)</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.28" id="physioanalysis-0528">PhysioAnalysis 0.5.28<a class="anchor" aria-label="anchor" href="#physioanalysis-0528"></a></h2>
 <div class="section level3">

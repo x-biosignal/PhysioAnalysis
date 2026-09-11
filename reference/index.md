@@ -92,6 +92,8 @@
   : Kruskal-Wallis rank-sum test (non-parametric between-groups omnibus)
 - [`ksNormalityTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ksNormalityTest.md)
   : Kolmogorov-Smirnov Test for Normality
+- [`leveneTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/leveneTest.md)
+  : Levene's test for homogeneity of variance
 - [`linearRegression()`](https://x-biosignal.github.io/PhysioAnalysis/reference/linearRegression.md)
   : Simple linear regression (ordinary least squares)
 - [`ljungBoxTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/ljungBoxTest.md)

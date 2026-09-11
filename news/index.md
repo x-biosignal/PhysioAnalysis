@@ -1,5 +1,19 @@
 # Changelog
 
+## PhysioAnalysis 0.5.29
+
+### New features
+
+- [`leveneTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/leveneTest.md)
+  — Levene’s test for homogeneity of variance across `k >= 2` groups, as
+  a one-way ANOVA on the absolute deviations from each group’s centre;
+  `center = "median"` (default) is the robust Brown-Forsythe variant.
+  Returns the F-statistic, p-value, degrees of freedom, `k`, `n` and
+  `center`. Reproduces `scipy.stats.levene` and `car::leveneTest` to
+  machine precision. (Its name collides with `car::leveneTest` — call
+  [`PhysioAnalysis::leveneTest`](https://x-biosignal.github.io/PhysioAnalysis/reference/leveneTest.md)
+  when `car` is attached.)
+
 ## PhysioAnalysis 0.5.28
 
 ### New features
