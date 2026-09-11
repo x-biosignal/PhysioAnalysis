@@ -78,6 +78,8 @@
   : Interquartile Range (robust spread)
 - [`jarqueBeraTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/jarqueBeraTest.md)
   : Jarque-Bera test for normality
+- [`kendallTau()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kendallTau.md)
+  : Kendall's tau-b rank correlation
 - [`kpssTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kpssTest.md)
   : KPSS test for stationarity
 - [`kruskalTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kruskalTest.md)

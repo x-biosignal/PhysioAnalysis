@@ -1,5 +1,19 @@
 # Changelog
 
+## PhysioAnalysis 0.5.21
+
+### New features
+
+- [`kendallTau()`](https://x-biosignal.github.io/PhysioAnalysis/reference/kendallTau.md)
+  — Kendall’s tau-b rank correlation (concordance-based, tie-corrected),
+  the third rank-correlation method alongside Pearson’s r and Spearman’s
+  rho (`correlationTest`) and the robust choice for ordinal or
+  heavily-tied data and small samples. Accepts `(x, y)` vectors or a
+  two-column `x`, and returns the tau-b statistic, the two-sided
+  normal-approximation p-value, the z-statistic and `n`. Reproduces base
+  R `stats::cor.test(method = "kendall")` and `scipy.stats.kendalltau`
+  bit-for-bit.
+
 ## PhysioAnalysis 0.5.20
 
 ### New features

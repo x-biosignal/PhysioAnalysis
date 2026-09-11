@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.20</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.21</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.21" id="physioanalysis-0521">PhysioAnalysis 0.5.21<a class="anchor" aria-label="anchor" href="#physioanalysis-0521"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-21">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-21"></a></h3>
+<ul><li>
+<code><a href="../reference/kendallTau.html">kendallTau()</a></code> — Kendall’s tau-b rank correlation (concordance-based, tie-corrected), the third rank-correlation method alongside Pearson’s r and Spearman’s rho (<code>correlationTest</code>) and the robust choice for ordinal or heavily-tied data and small samples. Accepts <code>(x, y)</code> vectors or a two-column <code>x</code>, and returns the tau-b statistic, the two-sided normal-approximation p-value, the z-statistic and <code>n</code>. Reproduces base R <code>stats::cor.test(method = "kendall")</code> and <code>scipy.stats.kendalltau</code> bit-for-bit.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.20" id="physioanalysis-0520">PhysioAnalysis 0.5.20<a class="anchor" aria-label="anchor" href="#physioanalysis-0520"></a></h2>
 <div class="section level3">
