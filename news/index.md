@@ -1,5 +1,23 @@
 # Changelog
 
+## PhysioAnalysis 0.5.25
+
+### New features
+
+- [`nemenyiTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/nemenyiTest.md)
+  — the Nemenyi post-hoc test, all pairwise comparisons of the
+  treatments after a Friedman repeated-measures test (the
+  repeated-measures counterpart of
+  [`tukeyHSD()`](https://x-biosignal.github.io/PhysioAnalysis/reference/tukeyHSD.md)
+  /
+  [`dunnTest()`](https://x-biosignal.github.io/PhysioAnalysis/reference/dunnTest.md)).
+  From the within-block mean ranks and the studentized-range
+  distribution with single-step family-wise error control; takes a
+  blocks-by-treatments matrix and returns a data frame of comparisons
+  (`statistic`, `p_adj`). Reproduces base R’s Nemenyi formula, the
+  `PMCMRplus` package and `scikit_posthocs.posthoc_nemenyi_friedman` to
+  machine precision.
+
 ## PhysioAnalysis 0.5.24
 
 ### New features

@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.24</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.25</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +55,14 @@
       <small>Source: <a href="https://github.com/x-biosignal/PhysioAnalysis/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.5.25" id="physioanalysis-0525">PhysioAnalysis 0.5.25<a class="anchor" aria-label="anchor" href="#physioanalysis-0525"></a></h2>
+<div class="section level3">
+<h3 id="new-features-0-5-25">New features<a class="anchor" aria-label="anchor" href="#new-features-0-5-25"></a></h3>
+<ul><li>
+<code><a href="../reference/nemenyiTest.html">nemenyiTest()</a></code> — the Nemenyi post-hoc test, all pairwise comparisons of the treatments after a Friedman repeated-measures test (the repeated-measures counterpart of <code><a href="../reference/tukeyHSD.html">tukeyHSD()</a></code> / <code><a href="../reference/dunnTest.html">dunnTest()</a></code>). From the within-block mean ranks and the studentized-range distribution with single-step family-wise error control; takes a blocks-by-treatments matrix and returns a data frame of comparisons (<code>statistic</code>, <code>p_adj</code>). Reproduces base R’s Nemenyi formula, the <code>PMCMRplus</code> package and <code>scikit_posthocs.posthoc_nemenyi_friedman</code> to machine precision.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.5.24" id="physioanalysis-0524">PhysioAnalysis 0.5.24<a class="anchor" aria-label="anchor" href="#physioanalysis-0524"></a></h2>
 <div class="section level3">
