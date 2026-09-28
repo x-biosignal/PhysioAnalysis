@@ -436,26 +436,26 @@ the other statistical methods (no new dependency — PhysioAnalysis
 already imports PhysioCore):
 
 - Reliability / agreement:
-  [`icc()`](https://x-biosignal.github.io/PhysioCore//reference/icc.html),
-  [`sem()`](https://x-biosignal.github.io/PhysioCore//reference/sem.html),
-  [`mdc()`](https://x-biosignal.github.io/PhysioCore//reference/mdc.html),
-  [`blandAltman()`](https://x-biosignal.github.io/PhysioCore//reference/blandAltman.html),
-  [`cohensD()`](https://x-biosignal.github.io/PhysioCore//reference/cohensD.html),
-  [`etaSquared()`](https://x-biosignal.github.io/PhysioCore//reference/etaSquared.html)
+  [`icc()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/icc.html),
+  [`sem()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/sem.html),
+  [`mdc()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/mdc.html),
+  [`blandAltman()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/blandAltman.html),
+  [`cohensD()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/cohensD.html),
+  [`etaSquared()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/etaSquared.html)
   (scalar) and
-  [`waveformCMC()`](https://x-biosignal.github.io/PhysioCore//reference/waveformCMC.html),
-  [`waveformICC()`](https://x-biosignal.github.io/PhysioCore//reference/waveformICC.html),
-  [`waveformReliability()`](https://x-biosignal.github.io/PhysioCore//reference/waveformReliability.html)
+  [`waveformCMC()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/waveformCMC.html),
+  [`waveformICC()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/waveformICC.html),
+  [`waveformReliability()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/waveformReliability.html)
   (pointwise waveform reliability).
 - Functional PCA:
-  [`fPCA()`](https://x-biosignal.github.io/PhysioCore//reference/fPCA.html),
-  [`reconstructFPCA()`](https://x-biosignal.github.io/PhysioCore//reference/reconstructFPCA.html),
-  [`registerCurves()`](https://x-biosignal.github.io/PhysioCore//reference/registerCurves.html).
+  [`fPCA()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/fPCA.html),
+  [`reconstructFPCA()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/reconstructFPCA.html),
+  [`registerCurves()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/registerCurves.html).
 - Circular statistics:
-  [`circularSummary()`](https://x-biosignal.github.io/PhysioCore//reference/circularSummary.html),
-  [`rayleighTest()`](https://x-biosignal.github.io/PhysioCore//reference/rayleighTest.html),
-  [`watsonWilliamsTest()`](https://x-biosignal.github.io/PhysioCore//reference/watsonWilliamsTest.html),
-  [`circularLinearCorrelation()`](https://x-biosignal.github.io/PhysioCore//reference/circularLinearCorrelation.html).
+  [`circularSummary()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/circularSummary.html),
+  [`rayleighTest()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/rayleighTest.html),
+  [`watsonWilliamsTest()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/watsonWilliamsTest.html),
+  [`circularLinearCorrelation()`](https://x-biosignal.r-universe.dev/PhysioExperiment/reference/circularLinearCorrelation.html).
 
 (The fPCA/circular/waveform implementations were relocated from
 PhysioMoCap down into PhysioCore, and re-exported back into PhysioMoCap
