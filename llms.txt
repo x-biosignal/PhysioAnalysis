@@ -27,7 +27,7 @@ Or install the development version from GitHub:
 
 ``` r
 
-# install.packages("remotes")
+# install.packages("remotes", repos = "https://cloud.r-project.org")
 remotes::install_github("x-biosignal/PhysioAnalysis")
 ```
 
@@ -37,27 +37,25 @@ remotes::install_github("x-biosignal/PhysioAnalysis")
 
 library(PhysioAnalysis)
 
-# Create sample EEG data with events
-signal_matrix <- matrix(rnorm(2500 * 32), nrow = 2500, ncol = 32)
+# Create sample EEG data with stimulus events
+signal_matrix <- matrix(rnorm(2500 * 4), nrow = 2500, ncol = 4)
 pe <- PhysioExperiment(
   assays = list(raw = signal_matrix),
   samplingRate = 250
 )
-pe <- addEvents(pe, name = "stimulus", onset = c(1.0, 3.0, 5.0, 7.0))
+pe <- addEvents(pe, onset = c(1, 3, 5, 7), duration = 0, type = "stimulus")
+
+# Spectral power in standard frequency bands (delta..gamma)
+power <- bandPower(pe)
 
 # Epoch around stimulus events (-0.2 to 0.8 s)
-pe_epoched <- epochData(pe, event = "stimulus", pre = 0.2, post = 0.8)
+pe_epoched <- epochData(pe, event_type = "stimulus", tmin = -0.2, tmax = 0.8)
 
-# Compute the average ERP
+# Compute the trial-averaged ERP
 erp <- averageEpochs(pe_epoched)
 
-# Run a cluster permutation test (condition A vs B)
-result <- clusterPermutationTest(pe_epoched,
-  group = "condition", n_permutations = 1000)
-
-# Visualize results
-plotERP(erp, channels = c("Fz", "Cz", "Pz"))
-plotTopomap(erp, time = 0.3)
+# Visualize the event-related potential for the first channel
+plotERP(pe_epoched, channel = 1)
 ```
 
 ## Features

@@ -22,7 +22,7 @@
 
     <a class="navbar-brand me-2" href="index.html">PhysioAnalysis</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.29</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.5.30</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,7 +91,7 @@
 <span>  repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"https://x-biosignal.r-universe.dev"</span>, <span class="fu">BiocManager</span><span class="fu">::</span><span class="fu">repositories</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p>Or install the development version from GitHub:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co"># install.packages("remotes")</span></span>
+<code class="sourceCode R"><span><span class="co"># install.packages("remotes", repos = "https://cloud.r-project.org")</span></span>
 <span><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"x-biosignal/PhysioAnalysis"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
@@ -100,27 +100,25 @@
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/x-biosignal/PhysioAnalysis" class="external-link">PhysioAnalysis</a></span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># Create sample EEG data with events</span></span>
-<span><span class="va">signal_matrix</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">2500</span> <span class="op">*</span> <span class="fl">32</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">2500</span>, ncol <span class="op">=</span> <span class="fl">32</span><span class="op">)</span></span>
+<span><span class="co"># Create sample EEG data with stimulus events</span></span>
+<span><span class="va">signal_matrix</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/matrix.html" class="external-link">matrix</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">2500</span> <span class="op">*</span> <span class="fl">4</span><span class="op">)</span>, nrow <span class="op">=</span> <span class="fl">2500</span>, ncol <span class="op">=</span> <span class="fl">4</span><span class="op">)</span></span>
 <span><span class="va">pe</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://x-biosignal.r-universe.dev/PhysioExperiment/reference/PhysioExperiment.html" class="external-link">PhysioExperiment</a></span><span class="op">(</span></span>
 <span>  assays <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>raw <span class="op">=</span> <span class="va">signal_matrix</span><span class="op">)</span>,</span>
 <span>  samplingRate <span class="op">=</span> <span class="fl">250</span></span>
 <span><span class="op">)</span></span>
-<span><span class="va">pe</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://x-biosignal.r-universe.dev/PhysioExperiment/reference/addEvents.html" class="external-link">addEvents</a></span><span class="op">(</span><span class="va">pe</span>, name <span class="op">=</span> <span class="st">"stimulus"</span>, onset <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1.0</span>, <span class="fl">3.0</span>, <span class="fl">5.0</span>, <span class="fl">7.0</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">pe</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://x-biosignal.r-universe.dev/PhysioExperiment/reference/addEvents.html" class="external-link">addEvents</a></span><span class="op">(</span><span class="va">pe</span>, onset <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span>, <span class="fl">5</span>, <span class="fl">7</span><span class="op">)</span>, duration <span class="op">=</span> <span class="fl">0</span>, type <span class="op">=</span> <span class="st">"stimulus"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Spectral power in standard frequency bands (delta..gamma)</span></span>
+<span><span class="va">power</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/bandPower.html">bandPower</a></span><span class="op">(</span><span class="va">pe</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># Epoch around stimulus events (-0.2 to 0.8 s)</span></span>
-<span><span class="va">pe_epoched</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/epochData.html">epochData</a></span><span class="op">(</span><span class="va">pe</span>, event <span class="op">=</span> <span class="st">"stimulus"</span>, pre <span class="op">=</span> <span class="fl">0.2</span>, post <span class="op">=</span> <span class="fl">0.8</span><span class="op">)</span></span>
+<span><span class="va">pe_epoched</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/epochData.html">epochData</a></span><span class="op">(</span><span class="va">pe</span>, event_type <span class="op">=</span> <span class="st">"stimulus"</span>, tmin <span class="op">=</span> <span class="op">-</span><span class="fl">0.2</span>, tmax <span class="op">=</span> <span class="fl">0.8</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># Compute the average ERP</span></span>
+<span><span class="co"># Compute the trial-averaged ERP</span></span>
 <span><span class="va">erp</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/averageEpochs.html">averageEpochs</a></span><span class="op">(</span><span class="va">pe_epoched</span><span class="op">)</span></span>
 <span></span>
-<span><span class="co"># Run a cluster permutation test (condition A vs B)</span></span>
-<span><span class="va">result</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/clusterPermutationTest.html">clusterPermutationTest</a></span><span class="op">(</span><span class="va">pe_epoched</span>,</span>
-<span>  group <span class="op">=</span> <span class="st">"condition"</span>, n_permutations <span class="op">=</span> <span class="fl">1000</span><span class="op">)</span></span>
-<span></span>
-<span><span class="co"># Visualize results</span></span>
-<span><span class="fu"><a href="reference/plotERP.html">plotERP</a></span><span class="op">(</span><span class="va">erp</span>, channels <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Fz"</span>, <span class="st">"Cz"</span>, <span class="st">"Pz"</span><span class="op">)</span><span class="op">)</span></span>
-<span><span class="fu"><a href="reference/plotTopomap.html">plotTopomap</a></span><span class="op">(</span><span class="va">erp</span>, time <span class="op">=</span> <span class="fl">0.3</span><span class="op">)</span></span></code></pre></div>
+<span><span class="co"># Visualize the event-related potential for the first channel</span></span>
+<span><span class="fu"><a href="reference/plotERP.html">plotERP</a></span><span class="op">(</span><span class="va">pe_epoched</span>, channel <span class="op">=</span> <span class="fl">1</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="features">Features<a class="anchor" aria-label="anchor" href="#features"></a>

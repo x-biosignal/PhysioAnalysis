@@ -1,5 +1,21 @@
 # Changelog
 
+## PhysioAnalysis 0.5.30
+
+### Documentation
+
+- [`?PhysioAnalysis`](https://x-biosignal.github.io/PhysioAnalysis/reference/PhysioAnalysis-package.md)
+  now answers: a package help page gives one paragraph on what the
+  package is for, the main entry points grouped by task, and where to go
+  next.
+- Runnable `@examples` added or corrected across 1 help pages. Each runs
+  offline in seconds, writes nothing outside
+  [`tempdir()`](https://rdrr.io/r/base/tempfile.html), and is executed
+  by `R CMD check`; anything needing a device, a download or an optional
+  backend is fenced with the reason stated.
+- The README’s quick start runs as written: it attaches the package,
+  builds its own inputs, and uses only hard dependencies.
+
 ## PhysioAnalysis 0.5.29
 
 ### New features
