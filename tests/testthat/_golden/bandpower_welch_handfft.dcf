@@ -1,0 +1,7 @@
+Key: bandpower_welch_handfft
+Source: independent from-scratch Welch PSD (base fft, hanning, 50%
+        overlap, one-sided), band sums for theta/alpha/beta; seed-505
+        rnorm(512), sr=256
+Tolerance: 1e-09
+Captured: fixed (deterministic generator)
+R: 4.5.2

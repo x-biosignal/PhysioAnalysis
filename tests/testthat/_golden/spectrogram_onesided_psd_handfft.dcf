@@ -1,0 +1,7 @@
+Key: spectrogram_onesided_psd_handfft
+Source: hand-computed one-sided FFT PSD
+        |fft(seg*hanning)|^2/(sr*sum(w^2)) (non-DC/Nyquist doubled),
+        seed-404 rnorm(256), sr=256, single 256-sample window
+Tolerance: 1e-09
+Captured: fixed (deterministic generator)
+R: 4.5.2

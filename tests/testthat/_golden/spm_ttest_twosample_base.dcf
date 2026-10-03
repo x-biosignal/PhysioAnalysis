@@ -1,0 +1,6 @@
+Key: spm_ttest_twosample_base
+Source: base stats::t.test(var.equal=TRUE) per time point, two-sample;
+        seed-303 groups n1=8 vs n2=9 (+0.3), 60 points
+Tolerance: 1e-08
+Captured: fixed (deterministic generator)
+R: 4.5.2

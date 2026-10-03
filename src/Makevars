@@ -1,0 +1,5 @@
+PKG_CXXFLAGS = $(SHLIB_OPENMP_CXXFLAGS)
+PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS) $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+# CXX17: fast_network.cpp uses structured bindings; also silences the
+# RcppArmadillo "C++11 fallback" note on Armadillo 14.x.
+CXX_STD = CXX17

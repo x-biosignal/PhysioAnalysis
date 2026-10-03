@@ -1,0 +1,6 @@
+Key: conn_correlation_spearman_base
+Source: base stats::cor(method='spearman') on seed-202 rnorm 500x5
+        matrix
+Tolerance: 1e-10
+Captured: fixed (deterministic generator)
+R: 4.5.2
